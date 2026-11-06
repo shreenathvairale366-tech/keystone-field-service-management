@@ -1,0 +1,19 @@
+:root { --ink:#1d2733; --muted:#5d6b7a; --line:#d9dee4; --bg:#f6f7f9; --accent:#0f5c8c; --bad:#b42318; font-family: "Segoe UI", system-ui, sans-serif; color: var(--ink); }
+* { box-sizing: border-box } body { margin:0; background: var(--bg) }
+.shell { max-width: 1200px; margin: 0 auto; padding: 16px }
+header { display:flex; gap:16px; align-items:center; padding-bottom:12px; border-bottom:2px solid var(--ink); margin-bottom:16px }
+header b { font-size:20px; letter-spacing:.06em } header span { flex:1; color:var(--muted) }
+input, select { padding:8px; border:1px solid var(--line); border-radius:4px; font:inherit; background:#fff }
+button { padding:8px 12px; border:0; border-radius:4px; background:var(--accent); color:#fff; font:inherit; cursor:pointer }
+button.ghost { background:transparent; color:var(--accent); border:1px solid var(--accent) }
+button:focus-visible, input:focus-visible, select:focus-visible { outline:3px solid #7fb3d5; outline-offset:1px }
+.stats { display:flex; gap:12px; flex-wrap:wrap; margin-bottom:16px } .stats div { flex:1; min-width:140px; padding:12px; background:#fff; border-left:4px solid var(--accent); color:var(--muted) }
+.stats big { display:block; font-size:28px; font-weight:700; color:var(--ink) } .stats .bad { border-color:var(--bad) }
+.new { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px } .new input:first-child { flex:2; min-width:200px }
+table { width:100%; border-collapse:collapse; background:#fff; display:block; overflow-x:auto }
+th, td { padding:10px; text-align:left; border-bottom:1px solid var(--line); white-space:nowrap } th { color:var(--muted); font-weight:600 }
+.actions { display:flex; gap:6px } .empty { color:var(--muted); text-align:center; padding:24px }
+.bad, .p-CRITICAL { color:var(--bad); font-weight:600 } .p-HIGH { color:#b54708; font-weight:600 }
+.err { background:#fee4e2; color:var(--bad); padding:10px; border-radius:4px; margin-bottom:12px }
+.login { max-width:340px; margin:12vh auto; display:flex; flex-direction:column; gap:10px; padding:24px; background:#fff; border-top:4px solid var(--accent) }
+.login h1 { margin:0; letter-spacing:.08em } .login p { margin:0 0 8px; color:var(--muted) }
